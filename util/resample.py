@@ -1,4 +1,3 @@
-## Imports
 import os, sys, glob
 import multiprocess as mp
 from collections import Counter
