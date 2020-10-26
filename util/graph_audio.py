@@ -55,7 +55,7 @@ def graph_audio(f, opt, y=None, sr=None, show=True, shape=None, dest=None, ext=N
     Returns:
         None (function may display a graph and / or save resulting graph file to a specified directory)
     '''
-    if sum(map(lambda x: x is None, [y,sr])):
+	if None in [y,sr]:
         y, sr = librosa.load(f)
     cmap = cm.get_cmap('viridis')
 
